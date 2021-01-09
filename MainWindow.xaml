@@ -1,0 +1,29 @@
+﻿<Window x:Class="TempConv.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TempConv"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="300">
+    <Grid>
+        <TextBox Name="tmpInput" HorizontalAlignment="Left" Height="23" Margin="96,27,0,174" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="120" TextChanged="TextBox_TextChanged_1"/>
+        <Label Content="Input" HorizontalAlignment="Left" Margin="44,48,0,0" VerticalAlignment="Top"/>
+        <Label Content="Input Scale" HorizontalAlignment="Left" Margin="33,101,0,0" VerticalAlignment="Top"/>
+        <Grid>
+            <RadioButton Name="rbtnCelsiusInput" Content="Celsius" HorizontalAlignment="Left" Margin="30,135,0,0" VerticalAlignment="Top"/>
+            <RadioButton Name="rbtnFarenheintInput" Content="Farenheint" HorizontalAlignment="Left" Margin="30,154,0,0" VerticalAlignment="Top"/>
+            <RadioButton Name="rbtnKelvinInput" Content="Kelvin" HorizontalAlignment="Left" Margin="30,174,0,0" VerticalAlignment="Top"/>
+        </Grid>
+        <Grid>
+            <RadioButton Name="rbtnCelsiusOutput" Content="Celsius" HorizontalAlignment="Left" Margin="197,137,0,0" VerticalAlignment="Top"/>
+            <RadioButton Name="rbtnFarenheintOutput" Content="Farenheint" HorizontalAlignment="Left" Margin="197,156,0,0" VerticalAlignment="Top"/>
+            <RadioButton Name="rbtnKelvinOutput" Content="Kelvin" HorizontalAlignment="Left" Margin="197,176,0,0" VerticalAlignment="Top"/>
+        </Grid>
+        <Label Content="Output Scale" HorizontalAlignment="Left" Margin="192,103,0,0" VerticalAlignment="Top"/>
+        <Label Content="Output" HorizontalAlignment="Left" Margin="90,214,0,0" VerticalAlignment="Top"/>
+        
+        <Button Content="Calculate" HorizontalAlignment="Left" Margin="105,191,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <TextBlock Name="txtOutput" HorizontalAlignment="Left" Margin="156,221,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
