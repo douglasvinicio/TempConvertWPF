@@ -25,30 +25,44 @@ namespace TempConv
             InitializeComponent();
         }
 
-        string userInput;
-
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void TempCovert()
         {
-            userInput = tmpInput.Text;
+            double temp;
 
-            double tempInput;
-            double tempOutput;
-
-            try
+            if (!double.TryParse(txtInput.Text,out temp))
             {
-                 tempInput = double.Parse(userInput);
-            }
-            catch (Exception)
-            {
-                // research for how to throw exception in wpf
-                throw;
+                return;
             }
 
-            //if (rbtnCelsiusInput.IsChecked && rbtnFarenheintOutput.IsChecked = true)
-            //{
-               // tempInput * 3
-           // }
-           // 
+            if (rbtnCelsiusInput.IsChecked == true)
+            {
+                if (rbtnFarenheintOutput.IsChecked == true)
+                {
+
+                }
+                else if (rbtnKelvinOutput.IsChecked == true)
+                {
+
+                }
+            }
+
+            if (rbtnFarenheintInput.IsChecked == true)
+            {
+                if (rbtnCelsiusOutput.IsChecked == true)
+                {
+                    result.Content = string.Format("{0:0:0}",2131);
+                }
+
+                else if (rbtnKelvinOutput.IsChecked == true)
+                {
+
+                }
+            }
+        }
+
+        private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }
