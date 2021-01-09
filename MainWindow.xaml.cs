@@ -36,13 +36,17 @@ namespace TempConv
 
             if (rbtnCelsiusInput.IsChecked == true)
             {
+                if (rbtnCelsiusOutput.IsChecked == true)
+                {
+                    result.Content = string.Format("{0:0.0} C", temp);
+                }
                 if (rbtnFarenheintOutput.IsChecked == true)
                 {
-
+                    result.Content = string.Format("{0:0.0} F", ((temp * 9 / 5) + 32));
                 }
                 else if (rbtnKelvinOutput.IsChecked == true)
                 {
-
+                    result.Content = string.Format("{0:0.0} K", (temp + 237.15));
                 }
             }
 
@@ -50,7 +54,7 @@ namespace TempConv
             {
                 if (rbtnCelsiusOutput.IsChecked == true)
                 {
-                    result.Content = string.Format("{0:0:0}",2131);
+                    
                 }
 
                 else if (rbtnKelvinOutput.IsChecked == true)

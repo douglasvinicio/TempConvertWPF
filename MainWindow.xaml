@@ -18,7 +18,6 @@
             <RadioButton GroupName="output" Name="rbtnCelsiusOutput" Content="Celsius" HorizontalAlignment="Left" Margin="197,137,0,0" VerticalAlignment="Top"/>
             <RadioButton GroupName="output" Name="rbtnFarenheintOutput" Content="Farenheint" HorizontalAlignment="Left" Margin="197,156,0,0" VerticalAlignment="Top"/>
             <RadioButton GroupName="output" Name="rbtnKelvinOutput" Content="Kelvin" HorizontalAlignment="Left" Margin="197,176,0,0" VerticalAlignment="Top"/>
-            <TextBlock HorizontalAlignment="Left" Margin="180,89,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
         </Grid>
         <Label Content="Output Scale" HorizontalAlignment="Left" Margin="192,103,0,0" VerticalAlignment="Top"/>
         <Label Name="result2" Content="Output" HorizontalAlignment="Left" Margin="90,214,0,0" VerticalAlignment="Top"/>
