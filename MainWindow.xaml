@@ -10,19 +10,18 @@
         <Label Content="Input" HorizontalAlignment="Left" Margin="44,48,0,0" VerticalAlignment="Top"/>
         <Label Content="Input Scale" HorizontalAlignment="Left" Margin="33,101,0,0" VerticalAlignment="Top"/>
         <Grid>
-            <RadioButton GroupName="input" Name="rbtnCelsiusInput" Content="Celsius" HorizontalAlignment="Left" Margin="30,135,0,0" VerticalAlignment="Top"/>
-            <RadioButton GroupName="input" Name="rbtnFarenheintInput" Content="Farenheint" HorizontalAlignment="Left" Margin="30,154,0,0" VerticalAlignment="Top"/>
-            <RadioButton GroupName="input" Name="rbtnKelvinInput" Content="Kelvin" HorizontalAlignment="Left" Margin="30,174,0,0" VerticalAlignment="Top"/>
+            <RadioButton GroupName="input" Name="rbtnCelsiusInput" Content="Celsius" HorizontalAlignment="Left" Margin="30,135,0,0" VerticalAlignment="Top" Checked="rbtn_Checked"/>
+            <RadioButton GroupName="input" Name="rbtnFarenheintInput" Content="Farenheint" HorizontalAlignment="Left" Margin="30,154,0,0" VerticalAlignment="Top" Checked="rbtn_Checked" />
+            <RadioButton GroupName="input" Name="rbtnKelvinInput" Content="Kelvin" HorizontalAlignment="Left" Margin="30,174,0,0" VerticalAlignment="Top" Checked="rbtn_Checked"/>
         </Grid>
         <Grid>
-            <RadioButton GroupName="output" Name="rbtnCelsiusOutput" Content="Celsius" HorizontalAlignment="Left" Margin="197,137,0,0" VerticalAlignment="Top"/>
-            <RadioButton GroupName="output" Name="rbtnFarenheintOutput" Content="Farenheint" HorizontalAlignment="Left" Margin="197,156,0,0" VerticalAlignment="Top"/>
-            <RadioButton GroupName="output" Name="rbtnKelvinOutput" Content="Kelvin" HorizontalAlignment="Left" Margin="197,176,0,0" VerticalAlignment="Top"/>
+            <RadioButton GroupName="output" Name="rbtnCelsiusOutput" Content="Celsius" HorizontalAlignment="Left" Margin="197,137,0,0" VerticalAlignment="Top" Checked="rbtn_Checked"/>
+            <RadioButton GroupName="output" Name="rbtnFarenheintOutput" Content="Farenheint" HorizontalAlignment="Left" Margin="197,156,0,0" VerticalAlignment="Top" Checked="rbtn_Checked"/>
+            <RadioButton GroupName="output" Name="rbtnKelvinOutput" Content="Kelvin" HorizontalAlignment="Left" Margin="197,176,0,0" VerticalAlignment="Top" Checked="rbtn_Checked"/>
         </Grid>
         <Label Content="Output Scale" HorizontalAlignment="Left" Margin="192,103,0,0" VerticalAlignment="Top"/>
-        <Label Name="result2" Content="Output" HorizontalAlignment="Left" Margin="90,214,0,0" VerticalAlignment="Top"/>
-        <Label Name="result" Content="" HorizontalAlignment="Left" Margin="143,216,0,0" VerticalAlignment="Top"/>
-        <TextBox Name="txtInput" HorizontalAlignment="Left" Height="23" Margin="96,52,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-
+        <Label Content="Output" HorizontalAlignment="Left" Margin="90,214,0,0" VerticalAlignment="Top"/>
+        <Label Name="result" Content="..." HorizontalAlignment="Left" Margin="143,216,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="txtInput" HorizontalAlignment="Left" Height="23" Margin="96,52,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="txtInput_TextChanged"/>
     </Grid>
 </Window>
